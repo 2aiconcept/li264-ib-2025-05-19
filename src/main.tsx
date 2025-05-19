@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
 // Importer le CSS de Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./app.routes";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );
