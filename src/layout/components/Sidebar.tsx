@@ -1,36 +1,31 @@
 import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
-function Sidebar() {
+type NavItem = {
+  label: string;
+  path: string;
+};
+
+interface SidebarProps {
+  navlinks: NavItem[];
+}
+function Sidebar({ navlinks }: SidebarProps) {
   return (
     <div>
       <ul className="nav flex-column">
-        <li className="nav-item">
-          <NavLink
-            to="/orders"
-            className="nav-link"
+        {navlinks.map((link, index) => (
+          <li
+            className="nav-item"
+            key={index}
           >
-            Orders
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            to="/customers"
-            className="nav-link"
-          >
-            Customers
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            to="/products"
-            className="nav-link"
-          >
-            Products
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
-        </li>
+            <NavLink
+              to={link.path}
+              className="nav-link"
+            >
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </div>
   );

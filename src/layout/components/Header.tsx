@@ -10,18 +10,26 @@ import "./Header.css";
 //   user: User;
 //   children: React.ReactNode; // Assure-toi d'inclure les enfants
 // };
-function Header(/**{ user, children }: UserProps*/) {
+
+type User = {
+  firstName: string;
+  lastName: string;
+};
+
+type UserProps = {
+  user: User;
+  children: React.ReactNode; // Assure-toi d'inclure les enfants
+};
+function Header({ user, children }: UserProps) {
   // console.log(user);
-  // const user = {firstName: 'Christophe', lastName: 'Gueroult'}
+  // const user = { firstName: "Christophe", lastName: "Gueroult" };
   return (
     <>
       <div>
-        <h1>user name</h1>
-        {/* <h1>
-          {user.firstName} {user.lastName = 'dede'} // error car lastName en readonly
-        </h1> */}
-        {/* <Profile /> */}
-        {/* {children} */}
+        <h4>
+          {user.firstName} {user.lastName}
+        </h4>
+        {children}
       </div>
     </>
   );
