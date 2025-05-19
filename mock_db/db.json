@@ -1,0 +1,94 @@
+{
+  "customers": [
+    {
+      "id": "1hhs",
+      "state": 1,
+      "name": "Modis",
+      "contact": "contact@modis.io"
+    },
+    {
+      "id": "e884",
+      "state": 1,
+      "name": "2AI GROUP LLP",
+      "contact": "test@2aigroup.com"
+    },
+    {
+      "id": "a128",
+      "state": 1,
+      "name": "Atos",
+      "contact": "contact@atos.io"
+    }
+  ],
+  "orders": [
+    {
+      "unitPrice": 500,
+      "nbOfDays": 2,
+      "vat": 20,
+      "state": 2,
+      "type": "formation",
+      "customer": "Atos",
+      "comment": "un commentaire",
+      "id": "AhwdCIP"
+    },
+    {
+      "id": "1d8f",
+      "unitPrice": 500,
+      "nbOfDays": 3,
+      "vat": 20,
+      "state": 1,
+      "type": "formation",
+      "customer": "capgemini",
+      "comment": ""
+    },
+    {
+      "unitPrice": 500,
+      "nbOfDays": 3,
+      "vat": 20,
+      "state": 2,
+      "customer": "PLB",
+      "id": "f2d5"
+    },
+    {
+      "id": "deb3",
+      "unitPrice": 500,
+      "nbOfDays": 3,
+      "vat": 20,
+      "state": 1,
+      "type": "formation",
+      "customer": "Modis",
+      "comment": "no comment"
+    }
+  ],
+  "products": [
+    {
+      "id": "2ffz",
+      "state": 1,
+      "ref": "JVSREA",
+      "description": "React Js initiation"
+    },
+    {
+      "id": "e889",
+      "state": 1,
+      "ref": "JVSREA-AV",
+      "description": "React Js avancé"
+    },
+    {
+      "id": "ae5b",
+      "state": 1,
+      "ref": "JVS-ANG",
+      "description": "Angular initiation"
+    },
+    {
+      "id": "8c5c",
+      "state": 1,
+      "ref": "JVS-ANGAV",
+      "description": "Angular avancé"
+    },
+    {
+      "id": "21a0",
+      "state": 0,
+      "ref": "JVS-NOD",
+      "description": "NodeJs les fondamentaux"
+    }
+  ]
+}
