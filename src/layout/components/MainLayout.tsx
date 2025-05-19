@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 // import Header from "./Header";
 import "./MainLayout.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 // import Sidebar from "./Sidebar";
 // import { useState } from "react";
 
@@ -25,13 +27,16 @@ function MainLayout() {
     <div className="d-flex h-100">
       <div className="p-3 text-bg-dark">
         <div>
-          {/* <Header user={user}>
-            <Profile />
-          </Header> */}
+          {<Header />}
           <hr />
         </div>
         <hr />
-        <div>{/* <Sidebar navlinks={links} /> */}</div>
+        <div>
+          {
+            /* <Sidebar navlinks={links} /> */
+            <Sidebar />
+          }
+        </div>
       </div>
       <div className="flex-grow-1 p-3">
         <Outlet />

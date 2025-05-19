@@ -1,0 +1,4 @@
+.nav a:hover,
+.nav .active {
+  color: white !important;
+}

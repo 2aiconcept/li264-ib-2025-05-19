@@ -5,12 +5,12 @@ import ListOrders from "./views/ListOrders";
 const AddOrder = lazy(() => import("./views/AddOrder"));
 const EditOrder = lazy(() => import("./views/EditOrder"));
 
-// export const preloadAddOrder = () => {
-//   import("./views/Addorder");
-// };
-// export const preloadEditOrder = () => {
-//   import("./views/Editorder");
-// };
+export const preloadAddOrder = () => {
+  import("./views/AddOrder");
+};
+export const preloadEditOrder = () => {
+  import("./views/EditOrder");
+};
 
 export const OrdersRoutes = {
   path: "orders",
