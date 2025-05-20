@@ -21,14 +21,14 @@
   ],
   "orders": [
     {
+      "id": "AhwdCIP",
       "unitPrice": 500,
       "nbOfDays": 2,
       "vat": 20,
-      "state": 2,
+      "state": 1,
       "type": "formation",
       "customer": "Atos",
-      "comment": "un commentaire",
-      "id": "AhwdCIP"
+      "comment": "un commentaire"
     },
     {
       "id": "1d8f",
