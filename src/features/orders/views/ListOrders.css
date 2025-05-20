@@ -1,0 +1,12 @@
+.state-canceled {
+  background: rgba(251, 128, 109, 0.201) !important;
+}
+.state-option {
+  background: rgba(251, 225, 109, 0.388);
+}
+.state-confirmed {
+  background: rgba(178, 251, 109, 0.23);
+}
+td {
+  background: none !important;
+}

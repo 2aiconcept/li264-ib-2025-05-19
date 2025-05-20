@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { OrderI } from "../interfaces/order.interface";
+import "./ListOrders.css";
 import {
   deleteOrder,
   getAllOrders,
@@ -8,6 +9,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { preloadAddOrder, preloadEditOrder } from "../orders.routes";
 import { STATE_ORDER_LABELS, StateOrder } from "../enums/state-order.enum";
+import { total } from "../../../utils/total";
+import { formatCurrency } from "../../../utils/currency";
 
 function ListOrders() {
   const [orders, setOrders] = useState<OrderI[]>([]);
@@ -84,13 +87,26 @@ function ListOrders() {
           </thead>
           <tbody>
             {orders.map((order) => (
-              <tr key={order.id}>
+              <tr
+                key={order.id}
+                className={`state-${STATE_ORDER_LABELS[
+                  order.state
+                ].toLowerCase()}`}
+              >
                 <td>{order.customer}</td>
                 <td>{order.type}</td>
                 <td>{order.unitPrice}</td>
                 <td>{order.nbOfDays}</td>
-                <td>calc total ht</td>
-                <td>calc total ttc</td>
+                <td>
+                  {formatCurrency(total(order.unitPrice, order.nbOfDays))}
+                </td>
+                <td>
+                  {formatCurrency(
+                    total(order.unitPrice, order.nbOfDays, order.vat),
+                    "USD",
+                    "en-US"
+                  )}
+                </td>
                 {/* <td>{STATE_ORDER_LABELS[order.state]}</td> */}
                 {/* ou afficher les libéllés dans un select */}
                 <td>

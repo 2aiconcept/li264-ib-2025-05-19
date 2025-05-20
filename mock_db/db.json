@@ -21,32 +21,22 @@
   ],
   "orders": [
     {
-      "id": "AhwdCIP",
-      "unitPrice": 500,
-      "nbOfDays": 2,
-      "vat": 20,
-      "state": 1,
-      "type": "formation",
-      "customer": "Atos",
-      "comment": "un commentaire"
-    },
-    {
       "id": "1d8f",
       "unitPrice": 500,
       "nbOfDays": 3,
       "vat": 20,
-      "state": 1,
+      "state": 0,
       "type": "formation",
       "customer": "capgemini",
       "comment": ""
     },
     {
+      "id": "f2d5",
       "unitPrice": 500,
       "nbOfDays": 3,
       "vat": 20,
       "state": 2,
-      "customer": "PLB",
-      "id": "f2d5"
+      "customer": "PLB"
     },
     {
       "id": "deb3",
@@ -57,6 +47,45 @@
       "type": "formation",
       "customer": "Modis",
       "comment": "no comment"
+    },
+    {
+      "id": "fc82",
+      "unitPrice": 1500,
+      "nbOfDays": 3,
+      "vat": 20,
+      "state": 1,
+      "customer": "PLB",
+      "comment": "sdfgsdgf"
+    },
+    {
+      "id": "8c3c",
+      "unitPrice": 1500,
+      "nbOfDays": 2,
+      "vat": 20,
+      "state": 1,
+      "type": "formation",
+      "customer": "PLB",
+      "comment": "dfg"
+    },
+    {
+      "id": "8416",
+      "unitPrice": 1500,
+      "nbOfDays": 3,
+      "vat": 20,
+      "state": 1,
+      "type": "Formation",
+      "customer": "Ib-Cegos",
+      "comment": "dgsh"
+    },
+    {
+      "id": "73a3",
+      "unitPrice": 1500,
+      "nbOfDays": 4,
+      "vat": 20,
+      "state": 2,
+      "type": "Formation",
+      "customer": "Ib-Cegos",
+      "comment": "dfsgsdfg"
     }
   ],
   "products": [
