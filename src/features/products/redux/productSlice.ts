@@ -92,4 +92,14 @@ const productSlice = createSlice({
   },
 });
 
+export const {
+  setLoading,
+  setProducts,
+  setProductsError,
+  setCurrentProduct,
+  addProductSuccess,
+  updateProductSuccess,
+  deleteProductSuccess,
+} = productSlice.actions;
+
 export default productSlice.reducer;
