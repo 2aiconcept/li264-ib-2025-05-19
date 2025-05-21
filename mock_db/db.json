@@ -25,7 +25,7 @@
       "unitPrice": 500,
       "nbOfDays": 3,
       "vat": 20,
-      "state": 0,
+      "state": 1,
       "type": "formation",
       "customer": "capgemini",
       "comment": ""
@@ -86,6 +86,14 @@
       "type": "Formation",
       "customer": "Ib-Cegos",
       "comment": "dfsgsdfg"
+    },
+    {
+      "id": "05fc",
+      "unitPrice": 1500,
+      "nbOfDays": 1,
+      "vat": 20,
+      "state": 1,
+      "customer": "Ib-Cegos"
     }
   ],
   "products": [
