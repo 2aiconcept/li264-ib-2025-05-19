@@ -98,26 +98,8 @@
   ],
   "products": [
     {
-      "id": "2ffz",
-      "state": 1,
-      "ref": "JVSREA",
-      "description": "React Js initiation"
-    },
-    {
-      "id": "e889",
-      "state": 1,
-      "ref": "JVSREA-AV",
-      "description": "React Js avancé"
-    },
-    {
-      "id": "ae5b",
-      "state": 1,
-      "ref": "JVS-ANG",
-      "description": "Angular initiation"
-    },
-    {
       "id": "8c5c",
-      "state": 1,
+      "state": 0,
       "ref": "JVS-ANGAV",
       "description": "Angular avancé"
     },
@@ -126,6 +108,18 @@
       "state": 0,
       "ref": "JVS-NOD",
       "description": "NodeJs les fondamentaux"
+    },
+    {
+      "id": "84b1",
+      "state": 0,
+      "ref": "JVSREA-AV",
+      "description": "ReactJs avancé"
+    },
+    {
+      "id": "fc9c",
+      "state": 1,
+      "ref": "JVS-IN",
+      "description": "Javascript initiation"
     }
   ]
 }
