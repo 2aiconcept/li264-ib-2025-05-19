@@ -1,12 +1,14 @@
 import type { IProduct } from "../interfaces/product.interface";
+
 import {
   selectAllProducts,
   selectError,
   selectLoading,
 } from "../redux/productSelectors";
 import { useAppDispatch, useAppSelector } from "../../../../store/hooks/redux";
-import { useEffect } from "react";
 import { deleteProduct, fetchProducts } from "../redux/productThunkEffect";
+
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { STATE_PRODUCT_LABELS } from "../enums/state-product.enum";
 

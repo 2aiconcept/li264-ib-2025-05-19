@@ -24,7 +24,7 @@
     "noUncheckedSideEffectImports": true,
 
     /* Types pour Vitest */
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["src"]
+  "include": ["src/**/*", "src/**/*.d.ts"]
 }

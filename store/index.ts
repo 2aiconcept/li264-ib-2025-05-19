@@ -9,7 +9,7 @@ export const store = configureStore({
   },
 });
 
-// Types de base pour les hooks
+// Types de base pour les hooks (pour typage Typescript)
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 

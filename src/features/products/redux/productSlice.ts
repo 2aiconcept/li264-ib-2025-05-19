@@ -9,6 +9,7 @@ interface ProductState {
   error: string | null;
 }
 
+// 2. initialisation du state
 const initialState: ProductState = {
   products: [],
   currentProduct: null,
@@ -16,7 +17,7 @@ const initialState: ProductState = {
   error: null,
 };
 
-// 2. Création du slice (combine reducer et actions)
+// 3. Création du slice (combine reducer et actions)
 const productSlice = createSlice({
   name: "products",
   initialState,
